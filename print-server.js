@@ -13,6 +13,8 @@ async function printMsg(number) {
   printer.newLine();
   printer.setTypeFontA();
   printer.setTextSize(3, 2);
+  // printer.println("Número");
+  // printer.newLine();
   printer.setTextSize(2, 2);
   printer.println(number);
 
@@ -52,14 +54,14 @@ app.get("/", function (req, res) {
 });
 app.post("/print", async function (req, res) {
   const { number } = req.body;
-  const print_ = await printMsg(number);
-  console.log(print_);
+  printMsg(number);
+  console.log({ number });
   res.status(200).send(req.body);
 });
 
 // Require the Routes API
 // Create a Server and run it on the port 3000
-const server = app.listen(3000, function () {
+const server = app.listen(80, function () {
   let host = server.address().address;
   let port = server.address().port;
   // Starting the Server at the port 3000
