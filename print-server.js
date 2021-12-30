@@ -28,7 +28,7 @@ async function printMsg(number) {
   }
 }
 
-console.log("**** Conectado ****");
+console.log("<<****Conectado ****>>");
 var express = require("express");
 var app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
