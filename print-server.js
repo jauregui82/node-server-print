@@ -12,8 +12,8 @@ async function printMsg(number) {
   await printer.printImage("./assets/paris-logo.png");
   printer.newLine();
   printer.setTypeFontA();
-  printer.setTextSize(3, 2);
-  printer.println("Número de atencón");
+  printer.setTextSize(1, 1);
+  printer.println("Número de atención");
   printer.newLine();
   printer.setTextSize(2, 2);
   printer.println(number);
