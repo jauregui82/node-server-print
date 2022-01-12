@@ -13,8 +13,8 @@ async function printMsg(number) {
   printer.newLine();
   printer.setTypeFontA();
   printer.setTextSize(3, 2);
-  // printer.println("Número");
-  // printer.newLine();
+  printer.println("Número de atencón");
+  printer.newLine();
   printer.setTextSize(2, 2);
   printer.println(number);
 
@@ -60,9 +60,9 @@ app.post("/print", async function (req, res) {
 });
 
 // Require the Routes API
-// Create a Server and run it on the port 3000
+// Create a Server and run it on the port 80
 const server = app.listen(80, function () {
   let host = server.address().address;
   let port = server.address().port;
-  // Starting the Server at the port 3000
+  // Starting the Server at the port 80
 });
